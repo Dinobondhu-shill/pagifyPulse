@@ -12,8 +12,12 @@ const Main = () => {
   }, []);
   console.log(data)
   return (
-    <div className="px-20 py-5">
-      <ProductCard></ProductCard>
+    <div className="px-20 py-5 flex justify-center">
+    <div className="grid grid-cols-3 gap-5">
+    {
+      data?.map((product)=> (<ProductCard key={product.id} product={product}></ProductCard>))
+     }
+    </div>
     </div>
   );
 };
