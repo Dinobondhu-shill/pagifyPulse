@@ -9,7 +9,7 @@ const ProductCard = ({product}) => {
 console.log(product)
   return (
     <div className='border rounded-lg px-4 py-4 flex flex-col items-center w-80'>
-      <img className='w-28 h-28' src="https://retailminded.com/wp-content/uploads/2016/03/EN_GreenOlive-1.jpg" alt="" /> <hr />
+      <img className='w-28 h-28' src={product.image} alt="" /> <hr />
       <div className='text-start'>
       <h2 className='text-xl font-semibold text-start py-4'>{product.name}</h2>
      <p className='w-72'>
