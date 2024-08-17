@@ -18,12 +18,13 @@ console.log(product)
             {isExpanded ? 'See Less' : 'See More'}
           </button>
         </p>
-      <div className='flex justify-between my-3'>
+      <div className='flex justify-between mt-3'>
         <p><span className='font-bold'>Price: $</span>{product.price}</p>
-        <p><span className='font-bold'>category:</span> {product.category}</p>
+        <p><span className='font-bold'>Ratings :</span> {product.ratings}</p>
+        
       </div>
+      <p><span className='font-bold'>category:</span> {product.category}</p>
       <p><span className='font-bold'>Date :</span> {product.created_at}</p>
-      <p><span className='font-bold'>Ratings :</span> {product.ratings}</p>
       </div>
     </div>
   );

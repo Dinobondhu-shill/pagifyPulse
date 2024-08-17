@@ -1,102 +1,402 @@
 [
-  {
-      "id": 1,
-      "name": "Lumina Desk Lamp",
-      "image": "https://example.com/images/lumina-desk-lamp.jpg",
-      "description": "A sleek, modern desk lamp with adjustable brightness settings.",
-      "price": 29.99,
-      "category": "Electronics",
-      "ratings": 4.5,
-      "created_at": "2024-08-16T10:45:00Z"
-  },
-  {
-      "id": 2,
-      "name": "EcoWood Cutting Board",
-      "image": "https://example.com/images/ecowood-cutting-board.jpg",
-      "description": "Sustainable bamboo cutting board perfect for all kitchen tasks.",
-      "price": 19.99,
-      "category": "Kitchen",
-      "ratings": 4.8,
-      "created_at": "2024-08-15T14:20:00Z"
-  },
-  {
-      "id": 3,
-      "name": "AeroFit Running Shoes",
-      "image": "https://example.com/images/aerofit-running-shoes.jpg",
-      "description": "Lightweight and comfortable running shoes for daily workouts.",
-      "price": 59.99,
-      "category": "Sportswear",
-      "ratings": 4.7,
-      "created_at": "2024-08-14T09:30:00Z"
-  },
-  {
-      "id": 4,
-      "name": "PureSound Wireless Headphones",
-      "image": "https://example.com/images/puresound-headphones.jpg",
-      "description": "High-fidelity wireless headphones with noise-cancelling features.",
-      "price": 89.99,
-      "category": "Electronics",
-      "ratings": 4.4,
-      "created_at": "2024-08-13T16:10:00Z"
-  },
-  {
-      "id": 5,
-      "name": "ComfyCotton Bath Towels",
-      "image": "https://example.com/images/comfycotton-towels.jpg",
-      "description": "Soft and absorbent bath towels made from 100% organic cotton.",
-      "price": 25.99,
-      "category": "Home",
-      "ratings": 4.6,
-      "created_at": "2024-08-12T12:50:00Z"
-  },
-  {
-      "id": 6,
-      "name": "VitaBlend Blender",
-      "image": "https://example.com/images/vitablend-blender.jpg",
-      "description": "Powerful blender with multiple speed settings for smoothies and more.",
-      "price": 49.99,
-      "category": "Kitchen",
-      "ratings": 4.3,
-      "created_at": "2024-08-11T08:15:00Z"
-  },
-  {
-      "id": 7,
-      "name": "AuraGlow LED Mirror",
-      "image": "https://example.com/images/auraglow-led-mirror.jpg",
-      "description": "LED mirror with adjustable lighting perfect for makeup and grooming.",
-      "price": 39.99,
-      "category": "Beauty",
-      "ratings": 4.9,
-      "created_at": "2024-08-10T18:00:00Z"
-  },
-  {
-      "id": 8,
-      "name": "ThermoBrew Coffee Maker",
-      "image": "https://example.com/images/thermobrew-coffee-maker.jpg",
-      "description": "Programmable coffee maker with temperature control and timer.",
-      "price": 74.99,
-      "category": "Kitchen",
-      "ratings": 4.2,
-      "created_at": "2024-08-09T07:30:00Z"
-  },
-  {
-      "id": 9,
-      "name": "UrbanPro Backpack",
-      "image": "https://example.com/images/urbanpro-backpack.jpg",
-      "description": "Durable and stylish backpack with multiple compartments for travel.",
-      "price": 45.99,
-      "category": "Accessories",
-      "ratings": 4.5,
-      "created_at": "2024-08-08T13:45:00Z"
-  },
-  {
-      "id": 10,
-      "name": "ZenGarden Plant Kit",
-      "image": "https://example.com/images/zengarden-plant-kit.jpg",
-      "description": "DIY plant kit with everything you need to create a mini indoor garden.",
-      "price": 34.99,
-      "category": "Garden",
-      "ratings": 4.7,
-      "created_at": "2024-08-07T11:25:00Z"
-  }
+    {
+        "id": 1,
+        "name": "Organic Olive Oil",
+        "image": "https://example.com/images/olive-oil.jpg",
+        "description": "This organic olive oil is made from the finest olives, ensuring a rich flavor and numerous health benefits. Ideal for cooking, dressing salads, and enhancing any dish with its smooth, rich taste.",
+        "price": 25,
+        "category": "Groceries",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 10:55 pm"
+    },
+    {
+        "id": 2,
+        "name": "UltraSoft Cotton Towels",
+        "image": "https://example.com/images/cotton-towels.jpg",
+        "description": "Made from 100% organic cotton, these UltraSoft towels are designed to provide maximum absorbency and comfort. They are durable, long-lasting, and perfect for everyday use at home or in the gym.",
+        "price": 35,
+        "category": "Home & Living",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 10:56 pm"
+    },
+    {
+        "id": 3,
+        "name": "Stainless Steel Chef Knife",
+        "image": "https://example.com/images/chef-knife.jpg",
+        "description": "This professional-grade Stainless Steel Chef Knife is designed for precision and durability. Its sharp blade and ergonomic handle make it the perfect tool for slicing, dicing, and chopping.",
+        "price": 45,
+        "category": "Kitchen",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 10:57 pm"
+    },
+    {
+        "id": 4,
+        "name": "Noise-Cancelling Headphones",
+        "image": "https://example.com/images/headphones.jpg",
+        "description": "Experience superior sound quality with these Noise-Cancelling Headphones. Designed to eliminate background noise, they offer crystal clear audio for music, calls, and movies.",
+        "price": 120,
+        "category": "Electronics",
+        "ratings": 4.6,
+        "created_at": "10-08-24, 10:58 pm"
+    },
+    {
+        "id": 5,
+        "name": "Eco-Friendly Bamboo Cutting Board",
+        "image": "https://example.com/images/cutting-board.jpg",
+        "description": "This Eco-Friendly Bamboo Cutting Board is both durable and sustainable. Perfect for chopping, slicing, and dicing, it’s a great addition to any kitchen.",
+        "price": 30,
+        "category": "Kitchen",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 10:59 pm"
+    },
+    {
+        "id": 6,
+        "name": "Wireless Bluetooth Speaker",
+        "image": "https://example.com/images/bluetooth-speaker.jpg",
+        "description": "Portable and powerful, this Wireless Bluetooth Speaker delivers high-quality sound. Perfect for outdoor gatherings or indoor parties, it connects easily to any Bluetooth-enabled device.",
+        "price": 50,
+        "category": "Electronics",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:00 pm"
+    },
+    {
+        "id": 7,
+        "name": "Luxury Bathrobe",
+        "image": "https://example.com/images/bathrobe.jpg",
+        "description": "Wrap yourself in comfort with this Luxury Bathrobe made from premium cotton. Soft and absorbent, it’s perfect for after the bath, at the spa, or just lounging at home.",
+        "price": 75,
+        "category": "Home & Living",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:01 pm"
+    },
+    {
+        "id": 8,
+        "name": "Premium Non-Stick Frying Pan",
+        "image": "https://example.com/images/frying-pan.jpg",
+        "description": "Cook with ease using this Premium Non-Stick Frying Pan. Its durable coating ensures food doesn’t stick, making it easy to cook and clean.",
+        "price": 40,
+        "category": "Kitchen",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:02 pm"
+    },
+    {
+        "id": 9,
+        "name": "Smart LED Light Bulb",
+        "image": "https://example.com/images/led-bulb.jpg",
+        "description": "Control your lighting with ease using this Smart LED Light Bulb. Compatible with most smart home systems, it offers adjustable brightness and color options.",
+        "price": 20,
+        "category": "Electronics",
+        "ratings": 4.5,
+        "created_at": "10-08-24, 11:03 pm"
+    },
+    {
+        "id": 10,
+        "name": "Organic Green Tea",
+        "image": "https://example.com/images/green-tea.jpg",
+        "description": "Enjoy the health benefits of Organic Green Tea, rich in antioxidants and natural flavors. Perfect for relaxing after a long day or starting your morning with a refreshing boost.",
+        "price": 15,
+        "category": "Groceries",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:04 pm"
+    },
+    {
+        "id": 11,
+        "name": "Ergonomic Office Chair",
+        "image": "https://example.com/images/office-chair.jpg",
+        "description": "Stay comfortable during long work hours with this Ergonomic Office Chair. Designed for maximum support, it helps reduce strain on your back and shoulders.",
+        "price": 150,
+        "category": "Home & Living",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:05 pm"
+    },
+    {
+        "id": 12,
+        "name": "Stainless Steel Water Bottle",
+        "image": "https://example.com/images/water-bottle.jpg",
+        "description": "Keep your drinks cold or hot for hours with this Stainless Steel Water Bottle. Durable and leak-proof, it’s perfect for outdoor adventures, gym sessions, or daily commutes.",
+        "price": 25,
+        "category": "Home & Living",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:06 pm"
+    },
+    {
+        "id": 13,
+        "name": "High-Performance Laptop",
+        "image": "https://example.com/images/laptop.jpg",
+        "description": "This High-Performance Laptop is perfect for gaming, work, or everyday use. It offers a fast processor, ample storage, and a stunning display for all your computing needs.",
+        "price": 950,
+        "category": "Electronics",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:07 pm"
+    },
+    {
+        "id": 14,
+        "name": "Organic Honey",
+        "image": "https://example.com/images/honey.jpg",
+        "description": "Pure and natural, this Organic Honey is harvested from the finest flowers. Perfect for sweetening your tea, drizzling on toast, or using in your favorite recipes.",
+        "price": 20,
+        "category": "Groceries",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:08 pm"
+    },
+    {
+        "id": 15,
+        "name": "Bluetooth Fitness Tracker",
+        "image": "https://example.com/images/fitness-tracker.jpg",
+        "description": "Monitor your health and fitness with this Bluetooth Fitness Tracker. Track your steps, calories burned, and sleep patterns, all from your wrist.",
+        "price": 60,
+        "category": "Electronics",
+        "ratings": 4.6,
+        "created_at": "10-08-24, 11:09 pm"
+    },
+    {
+        "id": 16,
+        "name": "Cast Iron Skillet",
+        "image": "https://example.com/images/cast-iron-skillet.jpg",
+        "description": "Perfect for cooking a variety of dishes, this Cast Iron Skillet offers even heat distribution and a non-stick surface. It’s durable and easy to clean, making it a must-have in any kitchen.",
+        "price": 55,
+        "category": "Kitchen",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:10 pm"
+    },
+    {
+        "id": 17,
+        "name": "Silk Pillowcase",
+        "image": "https://example.com/images/silk-pillowcase.jpg",
+        "description": "Sleep in luxury with this Silk Pillowcase, designed to reduce friction on your hair and skin. It’s hypoallergenic, soft, and adds a touch of elegance to your bedding.",
+        "price": 40,
+        "category": "Home & Living",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:11 pm"
+    },
+    {
+        "id": 18,
+        "name": "Portable Power Bank",
+        "image": "https://example.com/images/power-bank.jpg",
+        "description": "Keep your devices charged on the go with this Portable Power Bank. With a large capacity, it can charge your smartphone multiple times before needing a recharge.",
+        "price": 30,
+        "category": "Electronics",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:12 pm"
+    },
+    {
+        "id": 19,
+        "name": "Organic Quinoa",
+        "image": "https://example.com/images/quinoa.jpg",
+        "description": "Rich in protein and fiber, this Organic Quinoa is a healthy addition to any meal. It’s easy to cook and can be used in a variety of dishes, from salads to soups.",
+        "price": 15,
+        "category": "Groceries",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:13 pm"
+    },
+    {
+        "id": 20,
+        "name": "Premium Cookware Set",
+        "image": "https://example.com/images/cookware-set.jpg",
+        "description": "This Premium Cookware Set includes everything you need to prepare delicious meals. With non-stick surfaces and durable construction, it’s perfect for both beginners and experienced cooks.",
+        "price": 120,
+        "category": "Kitchen",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:14 pm"
+    },
+    {
+        "id": 21,
+        "name": "Electric Kettle",
+        "image": "https://example.com/images/electric-kettle.jpg",
+        "description": "Boil water quickly and efficiently with this Electric Kettle. It’s perfect for making tea, coffee, or instant noodles, and features an automatic shut-off for safety.",
+        "price": 35,
+        "category": "Kitchen",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:15 pm"
+    },
+    {
+        "id": 22,
+        "name": "Smartwatch with Heart Rate Monitor",
+        "image": "https://example.com/images/smartwatch.jpg",
+        "description": "Track your health and fitness with this Smartwatch, which features a heart rate monitor, step counter, and notifications for calls and messages.",
+        "price": 80,
+        "category": "Electronics",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:16 pm"
+    },
+    {
+        "id": 23,
+        "name": "Organic Almonds",
+        "image": "https://example.com/images/almonds.jpg",
+        "description": "These Organic Almonds are a healthy and delicious snack, perfect for on-the-go or adding to your favorite dishes. Rich in protein and healthy fats, they’re a great addition to any diet.",
+        "price": 20,
+        "category": "Groceries",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:17 pm"
+    },
+    {
+        "id": 24,
+        "name": "Non-Stick Wok",
+        "image": "https://example.com/images/wok.jpg",
+        "description": "Cook delicious stir-fries with this Non-Stick Wok. It’s designed for even heat distribution and features a non-stick surface for easy cooking and cleaning.",
+        "price": 45,
+        "category": "Kitchen",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:18 pm"
+    },
+    {
+        "id": 25,
+        "name": "Digital Kitchen Scale",
+        "image": "https://example.com/images/kitchen-scale.jpg",
+        "description": "Accurately measure your ingredients with this Digital Kitchen Scale. It features a sleek design and easy-to-read display, making it a must-have for any kitchen.",
+        "price": 25,
+        "category": "Kitchen",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:19 pm"
+    },
+    {
+        "id": 26,
+        "name": "Wireless Earbuds",
+        "image": "https://example.com/images/earbuds.jpg",
+        "description": "Enjoy crystal clear sound with these Wireless Earbuds, featuring Bluetooth connectivity and noise-cancelling technology. Perfect for listening to music, taking calls, and more.",
+        "price": 60,
+        "category": "Electronics",
+        "ratings": 4.6,
+        "created_at": "10-08-24, 11:20 pm"
+    },
+    {
+        "id": 27,
+        "name": "Comfort Memory Foam Pillow",
+        "image": "https://example.com/images/memory-foam-pillow.jpg",
+        "description": "Sleep better with this Comfort Memory Foam Pillow, designed to provide support and comfort for your head and neck. It’s hypoallergenic and ideal for all sleep positions.",
+        "price": 50,
+        "category": "Home & Living",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:21 pm"
+    },
+    {
+        "id": 28,
+        "name": "Organic Brown Rice",
+        "image": "https://example.com/images/brown-rice.jpg",
+        "description": "This Organic Brown Rice is a nutritious and versatile grain, perfect for a variety of dishes. It’s rich in fiber and nutrients, making it a healthy addition to any meal.",
+        "price": 15,
+        "category": "Groceries",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:22 pm"
+    },
+    {
+        "id": 29,
+        "name": "High-Definition Smart TV",
+        "image": "https://example.com/images/smart-tv.jpg",
+        "description": "Enjoy stunning visuals with this High-Definition Smart TV. It features a sleek design, vibrant colors, and easy access to your favorite streaming services.",
+        "price": 400,
+        "category": "Electronics",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:23 pm"
+    },
+    {
+        "id": 30,
+        "name": "Organic Dark Chocolate",
+        "image": "https://example.com/images/dark-chocolate.jpg",
+        "description": "Indulge in the rich taste of Organic Dark Chocolate, made from the finest cocoa beans. It’s a perfect treat for chocolate lovers and can be enjoyed as a snack or in recipes.",
+        "price": 10,
+        "category": "Groceries",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:24 pm"
+    },
+    {
+        "id": 31,
+        "name": "Non-Stick Griddle",
+        "image": "https://example.com/images/griddle.jpg",
+        "description": "Cook pancakes, eggs, and more on this Non-Stick Griddle. It features a large cooking surface and is perfect for preparing breakfast, lunch, or dinner.",
+        "price": 35,
+        "category": "Kitchen",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:25 pm"
+    },
+    {
+        "id": 32,
+        "name": "Eco-Friendly Bamboo Utensils",
+        "image": "https://example.com/images/bamboo-utensils.jpg",
+        "description": "Reduce your plastic waste with these Eco-Friendly Bamboo Utensils. They are durable, reusable, and perfect for on-the-go meals.",
+        "price": 20,
+        "category": "Kitchen",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:26 pm"
+    },
+    {
+        "id": 33,
+        "name": "Luxury Scented Candle",
+        "image": "https://example.com/images/scented-candle.jpg",
+        "description": "Create a relaxing atmosphere with this Luxury Scented Candle, made with natural soy wax and essential oils. It’s perfect for adding a touch of elegance to any room.",
+        "price": 30,
+        "category": "Home & Living",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:27 pm"
+    },
+    {
+        "id": 34,
+        "name": "Wireless Charging Pad",
+        "image": "https://example.com/images/charging-pad.jpg",
+        "description": "Charge your devices quickly and efficiently with this Wireless Charging Pad. It’s compatible with most smartphones and features a sleek, minimalist design.",
+        "price": 25,
+        "category": "Electronics",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:28 pm"
+    },
+    {
+        "id": 35,
+        "name": "Stainless Steel Insulated Tumbler",
+        "image": "https://example.com/images/insulated-tumbler.jpg",
+        "description": "Keep your drinks hot or cold for hours with this Stainless Steel Insulated Tumbler. It’s perfect for coffee, tea, or water and features a spill-proof lid.",
+        "price": 30,
+        "category": "Home & Living",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:29 pm"
+    },
+    {
+        "id": 36,
+        "name": "Organic Coconut Oil",
+        "image": "https://example.com/images/coconut-oil.jpg",
+        "description": "This Organic Coconut Oil is a versatile product that can be used for cooking, skincare, and hair care. It’s pure, natural, and rich in nutrients.",
+        "price": 25,
+        "category": "Groceries",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:30 pm"
+    },
+    {
+        "id": 37,
+        "name": "Compact Blender",
+        "image": "https://example.com/images/blender.jpg",
+        "description": "Blend smoothies, soups, and more with this Compact Blender. It’s powerful, easy to use, and perfect for making healthy meals at home.",
+        "price": 50,
+        "category": "Kitchen",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:31 pm"
+    },
+    {
+        "id": 38,
+        "name": "Ergonomic Laptop Stand",
+        "image": "https://example.com/images/laptop-stand.jpg",
+        "description": "Improve your posture and reduce strain with this Ergonomic Laptop Stand. It’s adjustable, portable, and perfect for working from home or on the go.",
+        "price": 40,
+        "category": "Home & Living",
+        "ratings": 4.7,
+        "created_at": "10-08-24, 11:32 pm"
+    },
+    {
+        "id": 39,
+        "name": "High-Performance Blender",
+        "image": "https://example.com/images/high-performance-blender.jpg",
+        "description": "This High-Performance Blender is perfect for making smoothies, soups, and more. It’s powerful, easy to use, and designed to last.",
+        "price": 100,
+        "category": "Kitchen",
+        "ratings": 4.9,
+        "created_at": "10-08-24, 11:33 pm"
+    },
+    {
+        "id": 40,
+        "name": "Organic Chia Seeds",
+        "image": "https://example.com/images/chia-seeds.jpg",
+        "description": "Add a nutritional boost to your meals with these Organic Chia Seeds. They are rich in omega-3 fatty acids, fiber, and protein, making them a healthy addition to any diet.",
+        "price": 15,
+        "category": "Groceries",
+        "ratings": 4.8,
+        "created_at": "10-08-24, 11:34 pm"
+    }
 ]
