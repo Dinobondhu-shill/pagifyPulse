@@ -11,10 +11,29 @@ const Main = () => {
   const [category, setCategory] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:5000/products')
+    const params = new URLSearchParams();
+
+    if (search) {
+      params.append('search', search);
+    }
+    if (sort) {
+      params.append('sort', sort);
+    }
+    if (priceSort) {
+      params.append('priceSort', priceSort);
+    }
+    if (brand) {
+      params.append('brand', brand);
+    }
+    if (category) {
+      params.append('category', category);
+    }
+  
+    const url = `http://localhost:5000/products?${params.toString()}`;
+    fetch(url)
       .then(response => response.json())
       .then(data => setData(data));
-  }, []);
+  }, [search, sort, priceSort, brand, category]);
   
   const handleSearch = (e) =>{
     e.preventDefault()
@@ -39,8 +58,8 @@ className="input input-bordered mt-2 flex items-center gap-2">
     value={sort}
     className=" mt-1 bg-base-100 border rounded-md w-52">
       <option disabled value="">Sort By Date</option>
-      <option value="quantity-desc">Newest First</option>
-      <option value="quantity-asc">Oldest First</option>
+      <option value="date-desc">Newest First</option>
+      <option value="date-asc">Oldest First</option>
   </select>
 </div>
 <div className="dropdown dropdown-hover">
@@ -51,20 +70,35 @@ className="input input-bordered mt-2 flex items-center gap-2">
     value={priceSort}
     className="mt-1 bg-base-100 border rounded-md w-52">
       <option disabled value="">Sort By Price</option>
-      <option value="quantity-desc">High to low</option>
-      <option value="quantity-asc">Low to high</option>
+      <option value="price-desc">High to low</option>
+      <option value="price-asc">Low to high</option>
   </select>
 </div>
 <div className="dropdown dropdown-hover">
   <select
-    onChange={e => setPriceSort(e.target.value)}
-    name='priceSort'
-    id="priceSort"
-    value={priceSort}
+    onChange={e => setBrand(e.target.value)}
+    name='setBrand'
+    id="setBrand"
+    value={brand}
     className="mt-1 bg-base-100 border rounded-md w-52">
-      <option disabled value="">Sort By Price</option>
-      <option value="quantity-desc">High to low</option>
-      <option value="quantity-asc">Low to high</option>
+      <option disabled value="">Brand</option>
+      <option value="NutriDelight">NutriDelight</option>
+      <option value="SoundWave">SoundWave</option>
+      <option value="WorkEase">WorkEase</option>
+  </select>
+</div>
+<div className="dropdown dropdown-hover">
+  <select
+    onChange={e => setCategory(e.target.value)}
+    name='setCategory'
+    id="setCategory"
+    value={category}
+    className="mt-1 bg-base-100 border rounded-md w-52">
+      <option disabled value="">Category</option>
+      <option value="Home & Living">Home & Living</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Groceries">Groceries</option>
+      <option value="Kitchen">Kitchen</option>
   </select>
 </div>
       </div>
