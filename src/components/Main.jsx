@@ -157,7 +157,7 @@ const Main = () => {
         <button
           onClick={handlePrevClick}
           disabled={page === 1}
-          className="btn btn-primary"
+          className="btn  bg-cyan-600"
         >
           Prev
         </button>
@@ -165,7 +165,7 @@ const Main = () => {
           <button
             key={index}
             onClick={() => handlePageClick(index + 1)}
-            className={`btn ${page === index + 1 ? 'btn-active' : 'btn-primary'}`}
+            className={`btn ${page === index + 1 ? 'bg-cyan-200' : 'bg-cyan-600'}`}
           >
             {index + 1}
           </button>
@@ -173,7 +173,7 @@ const Main = () => {
         <button
           onClick={handleNextClick}
           disabled={page === totalPages}
-          className="btn btn-primary"
+          className="btn bg-cyan-600"
         >
           Next
         </button>

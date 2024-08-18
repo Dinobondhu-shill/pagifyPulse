@@ -10,6 +10,12 @@ const Navbar = () => {
       <div className='font-bold text-xl'>PagifyPulse</div>
       {
         user ? <div className='flex items-center mt-1'>
+          <div className='flex gap-4'>
+          <Link>Home</Link>
+          <Link>Cart</Link>
+          <Link>Your Orders</Link>
+          <Link>Payment</Link>
+          </div>
           <div  data-tip={user?.displayName}  className="btn-circle avatar tooltip ml-3">
           <div className="w-10 rounded-full " >
             <img data-aos="zoom-in" data-aos-delay="50" src={user?.photoURL}/>
