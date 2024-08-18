@@ -71,7 +71,7 @@ const Main = () => {
 
   return (
     <div>
-      <div className="flex gap-3 justify-center items-center">
+      <div className="flex flex-col md:flex-row flex-wrap gap-3 justify-center items-center">
         {/* Search */}
         <form onSubmit={handleSearch} className="input input-bordered mt-2 flex items-center gap-2">
           <input type="text" name="search" className="grow" placeholder="Search" />
@@ -148,8 +148,8 @@ const Main = () => {
           </select>
         </div>
       </div>
-      <div className="px-20 py-5 flex justify-center">
-        <div className="grid grid-cols-3 gap-5">
+      <div className="lg:px-20 px-2 py-5 flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {data?.map((product) => (<ProductCard key={product._id} product={product}></ProductCard>))}
         </div>
       </div>
