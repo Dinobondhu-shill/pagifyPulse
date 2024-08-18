@@ -38,7 +38,7 @@ const Main = () => {
     }
     params.append('page', page); 
 
-    const url = `http://localhost:5000/products?${params.toString()}`;
+    const url = `https://product-server-beryl.vercel.app/products?${params.toString()}`;
     fetch(url)
       .then(response => response.json())
       .then(data => {
