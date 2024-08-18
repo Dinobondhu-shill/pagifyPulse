@@ -34,6 +34,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router} />
+   <FirebaseProvider>
+      <RouterProvider router={router} />
+    </FirebaseProvider>
   </StrictMode>,
 )

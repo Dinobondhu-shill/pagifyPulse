@@ -70,7 +70,7 @@ const Main = () => {
 
   return (
     <div>
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-3 justify-center items-center">
         {/* Search */}
         <form onSubmit={handleSearch} className="input input-bordered mt-2 flex items-center gap-2">
           <input type="text" name="search" className="grow" placeholder="Search" />
@@ -87,7 +87,7 @@ const Main = () => {
             name='sort'
             id="sort"
             value={sort}
-            className="mt-1 bg-base-100 border rounded-md w-52">
+            className="mt-1 bg-base-100 border rounded-md w-44">
             <option disabled value="">Sort By Date</option>
             <option value="date-desc">Newest First</option>
             <option value="date-asc">Oldest First</option>
@@ -99,7 +99,7 @@ const Main = () => {
             name='priceSort'
             id="priceSort"
             value={priceSort}
-            className="mt-1 bg-base-100 border rounded-md w-52">
+            className="mt-1 bg-base-100 border rounded-md w-44">
             <option disabled value="">Sort By Price</option>
             <option value="price-desc">High to low</option>
             <option value="price-asc">Low to high</option>
@@ -111,7 +111,7 @@ const Main = () => {
             name='brand'
             id="brand"
             value={brand}
-            className="mt-1 bg-base-100 border rounded-md w-52">
+            className="mt-1 bg-base-100 border rounded-md w-44">
             <option disabled value="">Brand</option>
             <option value="NutriDelight">NutriDelight</option>
             <option value="SoundWave">SoundWave</option>
@@ -124,7 +124,7 @@ const Main = () => {
             name='category'
             id="category"
             value={category}
-            className="mt-1 bg-base-100 border rounded-md w-52">
+            className="mt-1 bg-base-100 border rounded-md w-44">
             <option disabled value="">Category</option>
             <option value="Home & Living">Home & Living</option>
             <option value="Electronics">Electronics</option>
