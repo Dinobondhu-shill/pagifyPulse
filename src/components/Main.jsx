@@ -8,6 +8,7 @@ const Main = () => {
   const [priceSort, setPriceSort] = useState('');
   const [brand, setBrand] = useState('');
   const [category, setCategory] = useState('');
+  const [priceRange, setPriceRange] = useState(null)
   const [page, setPage] = useState(1); 
   const [totalPages, setTotalPages] = useState(1); 
 
@@ -29,6 +30,11 @@ const Main = () => {
     if (category) {
       params.append('category', category);
     }
+    if (priceRange) {
+      const [minPrice, maxPrice] = priceRange.split('-');
+      if (minPrice) params.append('minPrice', minPrice);
+      if (maxPrice) params.append('maxPrice', maxPrice);
+    }
     params.append('page', page); 
 
     const url = `http://localhost:5000/products?${params.toString()}`;
@@ -38,7 +44,7 @@ const Main = () => {
         setData(data.products);
         setTotalPages(data.totalPages);
       });
-  }, [search, sort, priceSort, brand, category, page]); // Re-fetch when page changes
+  }, [search, sort, priceSort, brand, category,priceRange, page]); // Re-fetch when page changes
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -124,6 +130,20 @@ const Main = () => {
             <option value="Electronics">Electronics</option>
             <option value="Groceries">Groceries</option>
             <option value="Kitchen">Kitchen</option>
+          </select>
+        </div>
+        <div className="dropdown dropdown-hover">
+          <select
+            onChange={e => setPriceRange(e.target.value)}
+            name='priceRange'
+            id="priceRange"
+            value={priceRange}
+            className="mt-1 bg-base-100 border rounded-md w-44">
+            <option disabled value="">Price Range</option>
+            <option value="0-50">0 - 50</option>
+            <option value="50-100">50 - 100</option>
+            <option value="100-200">100 - 200</option>
+            <option value="200-">200 +</option>
           </select>
         </div>
       </div>
