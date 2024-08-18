@@ -8,8 +8,8 @@ const Main = () => {
   const [priceSort, setPriceSort] = useState('');
   const [brand, setBrand] = useState('');
   const [category, setCategory] = useState('');
-  const [page, setPage] = useState(1); // Track current page
-  const [totalPages, setTotalPages] = useState(1); // Track total pages
+  const [page, setPage] = useState(1); 
+  const [totalPages, setTotalPages] = useState(1); 
 
   useEffect(() => {
     const params = new URLSearchParams();
@@ -29,7 +29,7 @@ const Main = () => {
     if (category) {
       params.append('category', category);
     }
-    params.append('page', page); // Add page parameter
+    params.append('page', page); 
 
     const url = `http://localhost:5000/products?${params.toString()}`;
     fetch(url)
@@ -38,7 +38,7 @@ const Main = () => {
         setData(data.products);
         setTotalPages(data.totalPages);
       });
-  }, [search, sort, priceSort, brand, category, page]); 
+  }, [search, sort, priceSort, brand, category, page]); // Re-fetch when page changes
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -46,21 +46,25 @@ const Main = () => {
     setSearch(searchText);
   };
 
-  const handleNextPage = () => {
-    if (page < totalPages) {
-      setPage(page + 1);
-    }
+  const handlePageClick = (pageNum) => {
+    setPage(pageNum);
   };
 
-  const handlePrevPage = () => {
+  const handlePrevClick = () => {
     if (page > 1) {
       setPage(page - 1);
     }
   };
 
+  const handleNextClick = () => {
+    if (page < totalPages) {
+      setPage(page + 1);
+    }
+  };
+
   return (
     <div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center">
         {/* Search */}
         <form onSubmit={handleSearch} className="input input-bordered mt-2 flex items-center gap-2">
           <input type="text" name="search" className="grow" placeholder="Search" />
@@ -128,9 +132,30 @@ const Main = () => {
           {data?.map((product) => (<ProductCard key={product._id} product={product}></ProductCard>))}
         </div>
       </div>
-      <div className="flex justify-center gap-2">
-        <button onClick={handlePrevPage} disabled={page === 1} className="btn btn-primary">Previous</button>
-        <button onClick={handleNextPage} disabled={page === totalPages} className="btn btn-primary">Next</button>
+      <div className="flex justify-center gap-2 my-5">
+        <button
+          onClick={handlePrevClick}
+          disabled={page === 1}
+          className="btn btn-primary"
+        >
+          Prev
+        </button>
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePageClick(index + 1)}
+            className={`btn ${page === index + 1 ? 'btn-active' : 'btn-primary'}`}
+          >
+            {index + 1}
+          </button>
+        ))}
+        <button
+          onClick={handleNextClick}
+          disabled={page === totalPages}
+          className="btn btn-primary"
+        >
+          Next
+        </button>
       </div>
     </div>
   );
