@@ -9,6 +9,7 @@ import Root from './components/Root';
 import Main from './components/Main';
 import Login from './components/Login';
 import Register from './components/Register';
+import FirebaseProvider from './firebase/FirebaseProvider';
 
 
 const router = createBrowserRouter([

@@ -11,6 +11,7 @@ const Main = () => {
   const [priceRange, setPriceRange] = useState(null)
   const [page, setPage] = useState(1); 
   const [totalPages, setTotalPages] = useState(1); 
+  
 
   useEffect(() => {
     const params = new URLSearchParams();
